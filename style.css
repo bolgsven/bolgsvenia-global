@@ -74,17 +74,23 @@ body {
   color: #003b46;
 }
 
-.light {
+.highlight {
   background: #72a6ab;
 }
 
-.light h2 {
+.highlight h2 {
   color: #003b46;
 }
 
-.light p,
-.light li {
+.highlight p,
+.highlight li {
   color: #102a2d;
+}
+
+.notice {
+  background: #f5f7f7;
+  border-top: 1px solid #d8e2e2;
+  border-bottom: 1px solid #d8e2e2;
 }
 
 .cards {
@@ -103,7 +109,7 @@ body {
 }
 
 .card h3 {
-  color: #07575b;
+  color: #003b46;
   margin-top: 0;
 }
 
@@ -133,7 +139,7 @@ body {
 
 .steps span {
   display: inline-block;
-  background: #07575b;
+  background: #003b46;
   color: #ffffff;
   width: 38px;
   height: 38px;
@@ -149,6 +155,10 @@ body {
 
 .contact a {
   color: #07575b;
+}
+
+.contact .button {
+  color: #ffffff;
 }
 
 footer {

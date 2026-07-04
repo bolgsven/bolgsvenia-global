@@ -19,7 +19,7 @@ body {
 .hero {
   background: linear-gradient(135deg, #c7e3e3, #eef7f7);
   color: #003b46;
-  padding: 50px 20px 55px;
+  padding: 38px 20px 45px;
   text-align: center;
   border-top: 10px solid #003b46;
   border-bottom: 1px solid #9fc5c5;
@@ -77,12 +77,11 @@ body {
   background: #dfeeee;
 }
 
-.card {
-  background: #ffffff;
-  border: 1px solid #d8e2e2;
-  border-radius: 10px;
-  padding: 24px;
-  box-shadow: 0 4px 12px rgba(0, 59, 70, 0.08);
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-top: 30px;
 }
 
 .card {

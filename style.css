@@ -50,7 +50,7 @@ body {
 
 .button {
   display: inline-block;
-  background: #07575b;
+  background: #003b46;
   color: #ffffff;
   padding: 13px 24px;
   border-radius: 6px;
@@ -60,7 +60,7 @@ body {
 }
 
 .button:hover {
-  background: #003b46;
+  background: #07575b;
 }
 
 .section {
@@ -156,6 +156,13 @@ footer {
   color: #ffffff;
   padding: 30px 20px;
   text-align: center;
+}
+
+footer .small {
+  font-size: 13px;
+  max-width: 900px;
+  margin: 10px auto 0;
+  opacity: 0.85;
 }
 
 @media (max-width: 800px) {

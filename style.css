@@ -6,7 +6,7 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   color: #1f2933;
-  background: #f5f7f7;
+  background: #f2f6f6;
   line-height: 1.6;
 }
 
@@ -17,17 +17,18 @@ body {
 }
 
 .hero {
-  background: linear-gradient(135deg, #d8eeee, #f5fbfb);
+  background: linear-gradient(135deg, #c7e3e3, #eef7f7);
   color: #003b46;
-  padding: 70px 20px;
+  padding: 50px 20px 55px;
   text-align: center;
-  border-bottom: 1px solid #aacccc;
+  border-top: 10px solid #003b46;
+  border-bottom: 1px solid #9fc5c5;
 }
 
 .logo {
-  width: 135px;
+  width: 120px;
   max-width: 100%;
-  margin-bottom: 25px;
+  margin-bottom: 18px;
 }
 
 .hero h1 {
@@ -42,8 +43,8 @@ body {
 }
 
 .intro {
-  max-width: 750px;
-  margin: 0 auto 30px;
+  max-width: 720px;
+  margin: 0 auto 24px;
   font-size: 18px;
 }
 
@@ -63,7 +64,7 @@ body {
 }
 
 .section {
-  padding: 55px 20px;
+  padding: 45px 20px;
 }
 
 .section h2 {
@@ -73,7 +74,7 @@ body {
 }
 
 .light {
-  background: #eaf4f4;
+  background: #dfeeee;
 }
 
 .card {
@@ -86,10 +87,10 @@ body {
 
 .card {
   background: #ffffff;
-  border: 1px solid #d8e2e2;
+  border: 1px solid #c8dddd;
   border-radius: 10px;
   padding: 24px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 6px 18px rgba(0, 59, 70, 0.08);
 }
 
 .card h3 {
@@ -113,10 +114,12 @@ body {
 }
 
 .steps div {
-  background: #f4f7f7;
+  background: #ffffff;
+  border: 1px solid #c8dddd;
   border-radius: 10px;
   padding: 22px;
   text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 59, 70, 0.06);
 }
 
 .steps span {

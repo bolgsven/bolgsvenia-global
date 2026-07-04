@@ -21,20 +21,20 @@ body {
 .hero {
   background: #0f5257;
   color: #ffffff;
-  padding: 14px 20px 50px;
+  padding: 10px 20px 40px;
   text-align: center;
 }
 
 .logo {
-  width: 180px;
+  width: 230px;
   max-width: 100%;
   display: block;
-  margin: 0 auto 6px;
+  margin: 0 auto 12px;
 }
 
 .hero h1 {
   font-size: 56px;
-  margin: 0 0 14px;
+  margin: 10px 0 14px;
 }
 
 .hero h2 {

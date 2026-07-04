@@ -100,6 +100,18 @@ body {
   color: #f7f4ee;
 }
 
+/* PROFESSIONAL SUPPORT SECTION */
+
+.professional-support {
+  background: #ffffff;
+  border-top: 1px solid #d8d0c2;
+  border-bottom: 1px solid #d8d0c2;
+}
+
+.professional-support p {
+  max-width: 850px;
+}
+
 /* NOTICE SECTION */
 
 .notice {
@@ -254,8 +266,8 @@ footer .small {
   }
 
   .logo {
-    width: 150px;
-    margin-bottom: 8px;
+    width: 180px;
+    margin-bottom: 10px;
   }
 
   .hero h1 {

@@ -75,7 +75,16 @@ body {
 }
 
 .light {
-  background: #dceeee;
+  background: #72a6ab;
+}
+
+.light h2 {
+  color: #003b46;
+}
+
+.light p,
+.light li {
+  color: #102a2d;
 }
 
 .cards {

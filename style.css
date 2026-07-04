@@ -17,19 +17,17 @@ body {
 }
 
 .hero {
-  background: linear-gradient(135deg, #003b46, #07575b);
-  color: #ffffff;
+  background: linear-gradient(135deg, #f4f8f8, #ffffff);
+  color: #003b46;
   padding: 70px 20px;
   text-align: center;
+  border-bottom: 1px solid #d8e2e2;
 }
 
 .logo {
   width: 150px;
   max-width: 100%;
   margin-bottom: 25px;
-  background: #ffffff;
-  padding: 12px 18px;
-  border-radius: 8px;
 }
 
 .hero h1 {
@@ -51,8 +49,8 @@ body {
 
 .button {
   display: inline-block;
-  background: #ffffff;
-  color: #07575b;
+  background: #07575b;
+  color: #ffffff;
   padding: 13px 24px;
   border-radius: 6px;
   text-decoration: none;
@@ -61,7 +59,7 @@ body {
 }
 
 .button:hover {
-  background: #e6f4f1;
+  background: #003b46;
 }
 
 .section {

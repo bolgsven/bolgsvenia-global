@@ -6,7 +6,7 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   color: #1f2933;
-  background: #f5f7f7;
+  background: #0f3f44;
   line-height: 1.6;
 }
 
@@ -17,12 +17,12 @@ body {
 }
 
 .hero {
-  background: #72a6ab;
-  color: #003b46;
-  padding: 50px 20px 55px;
+  background: #0f3f44;
+  color: #ffffff;
+  padding: 55px 20px 60px;
   text-align: center;
-  border-top: 10px solid #003b46;
-  border-bottom: 1px solid #003b46;
+  border-top: 10px solid #062f34;
+  border-bottom: 4px solid #c9a227;
 }
 
 .logo {
@@ -34,24 +34,27 @@ body {
 .hero h1 {
   font-size: 44px;
   margin: 10px 0;
+  color: #ffffff;
 }
 
 .hero h2 {
   font-size: 24px;
   font-weight: normal;
   margin: 10px 0 20px;
+  color: #f7f4ee;
 }
 
 .intro {
   max-width: 720px;
   margin: 0 auto 24px;
   font-size: 18px;
+  color: #f7f4ee;
 }
 
 .button {
   display: inline-block;
-  background: #003b46;
-  color: #ffffff;
+  background: #c9a227;
+  color: #062f34;
   padding: 13px 24px;
   border-radius: 6px;
   text-decoration: none;
@@ -60,37 +63,38 @@ body {
 }
 
 .button:hover {
-  background: #07575b;
+  background: #d9b63a;
 }
 
 .section {
-  padding: 45px 20px;
-  background: #f5f7f7;
+  padding: 50px 20px;
+  background: #f7f4ee;
 }
 
 .section h2 {
   font-size: 30px;
   margin-bottom: 18px;
-  color: #003b46;
+  color: #062f34;
 }
 
 .highlight {
-  background: #72a6ab;
+  background: #0f3f44;
+  color: #ffffff;
 }
 
 .highlight h2 {
-  color: #003b46;
+  color: #ffffff;
 }
 
 .highlight p,
 .highlight li {
-  color: #102a2d;
+  color: #f7f4ee;
 }
 
 .notice {
-  background: #f5f7f7;
-  border-top: 1px solid #d8e2e2;
-  border-bottom: 1px solid #d8e2e2;
+  background: #f7f4ee;
+  border-top: 1px solid #d8d0c2;
+  border-bottom: 1px solid #d8d0c2;
 }
 
 .cards {
@@ -102,14 +106,14 @@ body {
 
 .card {
   background: #ffffff;
-  border: 1px solid #b8d3d5;
+  border: 1px solid #d8d0c2;
   border-radius: 10px;
   padding: 24px;
-  box-shadow: 0 6px 18px rgba(0, 59, 70, 0.08);
+  box-shadow: 0 6px 18px rgba(6, 47, 52, 0.14);
 }
 
 .card h3 {
-  color: #003b46;
+  color: #062f34;
   margin-top: 0;
 }
 
@@ -130,16 +134,16 @@ body {
 
 .steps div {
   background: #ffffff;
-  border: 1px solid #b8d3d5;
+  border: 1px solid #d8d0c2;
   border-radius: 10px;
   padding: 22px;
   text-align: center;
-  box-shadow: 0 4px 12px rgba(0, 59, 70, 0.06);
+  box-shadow: 0 4px 12px rgba(6, 47, 52, 0.12);
 }
 
 .steps span {
   display: inline-block;
-  background: #003b46;
+  background: #0f3f44;
   color: #ffffff;
   width: 38px;
   height: 38px;
@@ -154,25 +158,26 @@ body {
 }
 
 .contact a {
-  color: #07575b;
+  color: #0f3f44;
 }
 
 .contact .button {
-  color: #ffffff;
+  color: #062f34;
 }
 
 footer {
-  background: #003b46;
+  background: #062f34;
   color: #ffffff;
   padding: 30px 20px;
   text-align: center;
+  border-top: 4px solid #c9a227;
 }
 
 footer .small {
   font-size: 13px;
   max-width: 900px;
   margin: 10px auto 0;
-  opacity: 0.85;
+  opacity: 0.9;
 }
 
 @media (max-width: 800px) {

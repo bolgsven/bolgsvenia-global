@@ -17,11 +17,12 @@ body {
 }
 
 .hero {
-  background: #eef5f5;
+  background: linear-gradient(135deg, #72a6ab, #d8eeee);
   color: #003b46;
-  padding: 70px 20px;
+  padding: 50px 20px 55px;
   text-align: center;
-  border-bottom: 1px solid #b7d0d2;
+  border-top: 10px solid #003b46;
+  border-bottom: 1px solid #8fbcc1;
 }
 
 .logo {

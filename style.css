@@ -6,7 +6,7 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   color: #1f2933;
-  background: #f2f6f6;
+  background: #f5f7f7;
   line-height: 1.6;
 }
 
@@ -17,12 +17,12 @@ body {
 }
 
 .hero {
-  background: linear-gradient(135deg, #72a6ab, #d8eeee);
+  background: linear-gradient(135deg, #72a6ab, #cfe7e7);
   color: #003b46;
   padding: 50px 20px 55px;
   text-align: center;
   border-top: 10px solid #003b46;
-  border-bottom: 1px solid #8fbcc1;
+  border-bottom: 1px solid #72a6ab;
 }
 
 .logo {
@@ -65,6 +65,7 @@ body {
 
 .section {
   padding: 45px 20px;
+  background: #f5f7f7;
 }
 
 .section h2 {
@@ -74,7 +75,7 @@ body {
 }
 
 .light {
-  background: #dfeeee;
+  background: #dceeee;
 }
 
 .cards {
@@ -86,7 +87,7 @@ body {
 
 .card {
   background: #ffffff;
-  border: 1px solid #c8dddd;
+  border: 1px solid #b8d3d5;
   border-radius: 10px;
   padding: 24px;
   box-shadow: 0 6px 18px rgba(0, 59, 70, 0.08);
@@ -114,7 +115,7 @@ body {
 
 .steps div {
   background: #ffffff;
-  border: 1px solid #c8dddd;
+  border: 1px solid #b8d3d5;
   border-radius: 10px;
   padding: 22px;
   text-align: center;
@@ -139,13 +140,6 @@ body {
 
 .contact a {
   color: #07575b;
-}
-
-footer {
-  background: #003b46;
-  color: #ffffff;
-  padding: 30px 20px;
-  text-align: center;
 }
 
 footer {

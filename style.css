@@ -19,20 +19,20 @@ body {
 .hero {
   background: #0f5257;
   color: #ffffff;
-  padding: 20px 20px 55px;
+  padding: 14px 20px 50px;
   text-align: center;
 }
 
 .logo {
-  width: 170px;
+  width: 180px;
   max-width: 100%;
   display: block;
-  margin: 0 auto 10px;
+  margin: 0 auto 6px;
 }
 
 .hero h1 {
   font-size: 56px;
-  margin: 0 0 16px;
+  margin: 0 0 14px;
 }
 
 .hero h2 {

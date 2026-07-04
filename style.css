@@ -17,38 +17,35 @@ body {
 }
 
 .hero {
-  background: #0f3f44;
+  background: #0f5257;
   color: #ffffff;
-  padding: 55px 20px 60px;
+  padding: 20px 20px 55px;
   text-align: center;
-  border-top: 10px solid #062f34;
-  border-bottom: 4px solid #c9a227;
 }
 
 .logo {
-  width: 300px;
+  width: 170px;
   max-width: 100%;
-  margin-bottom: 24px;
+  display: block;
+  margin: 0 auto 10px;
 }
 
 .hero h1 {
-  font-size: 44px;
-  margin: 10px 0;
-  color: #ffffff;
+  font-size: 56px;
+  margin: 0 0 16px;
 }
 
 .hero h2 {
-  font-size: 24px;
-  font-weight: normal;
-  margin: 10px 0 20px;
-  color: #f7f4ee;
+  font-size: 22px;
+  font-weight: 400;
+  margin: 0 0 24px;
 }
 
 .intro {
-  max-width: 720px;
-  margin: 0 auto 24px;
+  max-width: 760px;
+  margin: 0 auto 30px;
   font-size: 18px;
-  color: #f7f4ee;
+  line-height: 1.7;
 }
 
 .button {

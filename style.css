@@ -338,6 +338,15 @@ footer .small {
   opacity: 0.9;
 }
 
+footer a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+footer a:hover {
+  color: #c9a227;
+}
+
 /* MOBILE RESPONSIVE */
 
 @media (max-width: 800px) {

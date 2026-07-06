@@ -56,17 +56,21 @@ body {
 .language-switch {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
   margin-left: 8px;
+  padding-left: 10px;
+  border-left: 1px solid rgba(255, 255, 255, 0.35);
 }
 
 .language-switch a {
-  font-size: 18px;
+  font-size: 13px;
   line-height: 1;
+  padding: 3px 4px;
+  border-radius: 4px;
 }
 
 .language-switch a:hover {
-  transform: scale(1.12);
+  background: rgba(201, 162, 39, 0.18);
 }
 
 /* HERO SECTION */
@@ -280,13 +284,13 @@ body {
   margin-bottom: 10px;
 }
 
-/* TARIFF SECTION */
+/* PRICING SECTION */
 
-.tariff {
+.pricing {
   background: #f7f4ee;
 }
 
-.tariff-note {
+.pricing-note {
   margin-top: 26px;
   padding: 20px;
   background: #ffffff;
@@ -295,11 +299,11 @@ body {
   box-shadow: 0 4px 12px rgba(6, 47, 52, 0.10);
 }
 
-.tariff-note p {
+.pricing-note p {
   margin: 0 0 12px;
 }
 
-.tariff-note p:last-child {
+.pricing-note p:last-child {
   margin-bottom: 0;
 }
 
@@ -338,7 +342,7 @@ footer .small {
 
 @media (max-width: 800px) {
   html {
-    scroll-padding-top: 110px;
+    scroll-padding-top: 120px;
   }
 
   .site-nav {
@@ -355,10 +359,11 @@ footer .small {
 
   .language-switch {
     margin-left: 0;
+    padding-left: 8px;
   }
 
   .language-switch a {
-    font-size: 17px;
+    font-size: 13px;
   }
 
   .hero {

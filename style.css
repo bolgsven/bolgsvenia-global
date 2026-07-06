@@ -30,6 +30,9 @@ body {
   background: #062f34;
   border-bottom: 3px solid #c9a227;
   padding: 12px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .nav-container {
@@ -73,6 +76,10 @@ body {
   margin: 0 auto 30px;
   font-size: 18px;
   line-height: 1.7;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
 }
 
 /* BUTTONS */
@@ -308,6 +315,17 @@ footer .small {
 /* MOBILE RESPONSIVE */
 
 @media (max-width: 800px) {
+    .site-nav {
+    padding: 10px 12px;
+  }
+
+  .nav-container {
+    gap: 10px;
+  }
+
+  .site-nav a {
+    font-size: 13px;
+  }
     .site-nav {
     padding: 10px 12px;
   }

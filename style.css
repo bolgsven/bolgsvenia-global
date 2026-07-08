@@ -157,6 +157,15 @@ body {
   color: #f7f4ee;
 }
 
+.highlight a {
+  color: #c9a227;
+  font-weight: bold;
+}
+
+.highlight a:hover {
+  color: #d9b63a;
+}
+
 /* PROFESSIONAL SUPPORT SECTION */
 
 .professional-support {

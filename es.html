@@ -40,7 +40,7 @@
         empresas, documentos administrativos, documentos legales y expedientes personales.
       </p>
 
-      <a href="mailto:bolgsvenia.global@bolgsvenia.com?subject=Solicitud%20de%20Presupuesto%20de%20Traducci%C3%B3n&body=Hola%20Bolgsvenia%20Global,%0D%0A%0D%0AMe%20gustar%C3%ADa%20solicitar%20un%20presupuesto%20de%20traducci%C3%B3n.%0D%0A%0D%0ADirecci%C3%B3n%20de%20la%20traducci%C3%B3n:%20Espa%C3%B1ol%20a%20ingl%C3%A9s%20/%20Ingl%C3%A9s%20a%20espa%C3%B1ol%20/%20No%20estoy%20seguro/a%0D%0ATipo%20de%20documento:%20%0D%0AN%C3%BAmero%20de%20p%C3%A1ginas:%20%0D%0APa%C3%ADs%20donde%20se%20utilizar%C3%A1%20la%20traducci%C3%B3n:%20%0D%0AFecha%20l%C3%ADmite:%20%0D%0A%C2%BFNecesita%20declaraci%C3%B3n%20de%20traducci%C3%B3n%20certificada?:%20S%C3%AD%20/%20No%0D%0A%0D%0AGracias." class="button">Solicitar Presupuesto</a>
+      <a href="#contact" class="button">Solicitar Presupuesto</a>
     </div>
   </header>
 
@@ -131,7 +131,7 @@
         <div class="steps">
           <div>
             <span>1</span>
-            <p>Envíe una copia clara del documento por correo electrónico.</p>
+            <p>Complete el formulario web y adjunte una copia clara del documento si es necesario.</p>
           </div>
 
           <div>
@@ -278,7 +278,7 @@
           y cuando sean aceptadas por la autoridad receptora.
           Para documentos que requieran traducción jurada en España, Bolgsvenia Global puede asistir
           mediante colaboración con un traductor jurado autorizado en España.
-          Bolgsvenia Global no actúa directamente como traductor jurado español.
+          Bolgsvenia Global no es traductor jurado español.
           Bolgsvenia Global presta únicamente servicios de traducción y no ofrece asesoramiento legal.
         </p>
       </div>
@@ -288,7 +288,8 @@
       <div class="container">
         <h2>Contacto</h2>
         <p>
-          Para solicitar un presupuesto, envíe su documento o consulta por correo electrónico.
+          Para solicitar un presupuesto, complete el siguiente formulario. Puede adjuntar un documento
+          para fines de presupuesto.
         </p>
         <p>
           Incluya la dirección de la traducción, el tipo de documento, el número de páginas,
@@ -296,9 +297,71 @@
           una declaración de traducción certificada.
         </p>
 
-        <p><strong>Email:</strong> <a href="mailto:bolgsvenia.global@bolgsvenia.com">bolgsvenia.global@bolgsvenia.com</a></p>
+        <form action="https://api.web3forms.com/submit" method="POST" enctype="multipart/form-data" class="contact-form">
+          <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
+          <input type="hidden" name="subject" value="Nueva consulta de traducción desde la web de Bolgsvenia Global">
+          <input type="hidden" name="from_name" value="Sitio web de Bolgsvenia Global">
 
-        <a href="mailto:bolgsvenia.global@bolgsvenia.com?subject=Solicitud%20de%20Presupuesto%20de%20Traducci%C3%B3n&body=Hola%20Bolgsvenia%20Global,%0D%0A%0D%0AMe%20gustar%C3%ADa%20solicitar%20un%20presupuesto%20de%20traducci%C3%B3n.%0D%0A%0D%0ADirecci%C3%B3n%20de%20la%20traducci%C3%B3n:%20Espa%C3%B1ol%20a%20ingl%C3%A9s%20/%20Ingl%C3%A9s%20a%20espa%C3%B1ol%20/%20No%20estoy%20seguro/a%0D%0ATipo%20de%20documento:%20%0D%0AN%C3%BAmero%20de%20p%C3%A1ginas:%20%0D%0APa%C3%ADs%20donde%20se%20utilizar%C3%A1%20la%20traducci%C3%B3n:%20%0D%0AFecha%20l%C3%ADmite:%20%0D%0A%C2%BFNecesita%20declaraci%C3%B3n%20de%20traducci%C3%B3n%20certificada?:%20S%C3%AD%20/%20No%0D%0A%0D%0AGracias." class="button">Enviar Consulta</a>
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="name" required>
+
+          <label for="correo">Correo electrónico</label>
+          <input type="email" id="correo" name="email" required>
+
+          <label for="telefono">Teléfono / WhatsApp opcional</label>
+          <input type="text" id="telefono" name="phone">
+
+          <label for="direccion-traduccion">Dirección de la traducción</label>
+          <select id="direccion-traduccion" name="language_direction" required>
+            <option value="">Seleccione una opción</option>
+            <option value="Español a inglés">Español a inglés</option>
+            <option value="Inglés a español">Inglés a español</option>
+            <option value="No estoy seguro/a">No estoy seguro/a</option>
+          </select>
+
+          <label for="tipo-documento">Tipo de documento</label>
+          <input type="text" id="tipo-documento" name="document_type" placeholder="p. ej. certificado de nacimiento, documento legal, documento empresarial">
+
+          <label for="paginas">Número de páginas</label>
+          <input type="text" id="paginas" name="number_of_pages">
+
+          <label for="pais">País donde se utilizará la traducción</label>
+          <input type="text" id="pais" name="country_where_translation_will_be_used">
+
+          <label for="fecha-limite">Fecha límite</label>
+          <input type="text" id="fecha-limite" name="deadline">
+
+          <label for="certificada">¿Necesita declaración de traducción certificada?</label>
+          <select id="certificada" name="certified_translation_statement_required">
+            <option value="">Seleccione una opción</option>
+            <option value="Sí">Sí</option>
+            <option value="No">No</option>
+            <option value="No estoy seguro/a">No estoy seguro/a</option>
+          </select>
+
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="message" rows="6" required></textarea>
+
+          <label for="archivo">Adjuntar documento opcional</label>
+          <input type="file" id="archivo" name="attachment" accept=".pdf,.jpg,.jpeg,.png,.doc,.docx">
+
+          <div class="checkbox-row">
+            <input type="checkbox" id="consentimiento" name="consent" required>
+            <label for="consentimiento">
+              Entiendo que mis datos y cualquier documento adjunto serán utilizados por Bolgsvenia Global
+              para responder a mi consulta y prestar servicios de traducción cuando se acuerde.
+            </label>
+          </div>
+
+          <button type="submit">Enviar consulta</button>
+        </form>
+
+        <p class="form-note">
+          Por favor, evite enviar documentos altamente sensibles salvo que sea necesario. Para archivos grandes,
+          varios documentos o documentos altamente confidenciales, contacte primero para confirmar la forma más adecuada
+          de recibirlos. También puede escribir directamente a
+          <a href="mailto:bolgsvenia.global@bolgsvenia.com">bolgsvenia.global@bolgsvenia.com</a>.
+        </p>
       </div>
     </section>
 
@@ -314,7 +377,8 @@
         Se realizan trabajos de traducción desde 2017.
         Las declaraciones de traducción certificada para el Reino Unido están disponibles cuando proceda.
         Para traducciones juradas en España, puede haber asistencia mediante colaboración con un traductor jurado autorizado en España.
-        Bolgsvenia Global no actúa directamente como traductor jurado español.
+        Bolgsvenia Global no es traductor jurado español.
+        Bolgsvenia Global presta únicamente servicios de traducción y no ofrece asesoramiento legal.
       </p>
 
       <p class="small">

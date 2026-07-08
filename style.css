@@ -122,6 +122,7 @@ body {
 
 .button:hover {
   background: #d9b63a;
+  color: #062f34;
 }
 
 /* GENERAL SECTIONS */
@@ -141,6 +142,19 @@ body {
   font-size: 16px;
 }
 
+/* LINKS IN NORMAL LIGHT SECTIONS */
+
+.section a,
+.section a:visited {
+  color: #0f5257;
+  font-weight: bold;
+}
+
+.section a:hover,
+.section a:focus {
+  color: #c9a227;
+}
+
 /* DARK HIGHLIGHT SECTIONS */
 
 .highlight {
@@ -156,6 +170,8 @@ body {
 .highlight li {
   color: #f7f4ee;
 }
+
+/* LINKS IN DARK SECTIONS */
 
 .section.highlight a,
 .section.highlight a:visited {
@@ -324,11 +340,24 @@ body {
   text-align: center;
 }
 
-.contact a {
-  color: #0f3f44;
+.contact a,
+.contact a:visited {
+  color: #0f5257;
+  font-weight: bold;
 }
 
-.contact .button {
+.contact a:hover,
+.contact a:focus {
+  color: #c9a227;
+}
+
+.contact .button,
+.contact .button:visited {
+  color: #062f34;
+}
+
+.contact .button:hover,
+.contact .button:focus {
   color: #062f34;
 }
 
@@ -441,12 +470,14 @@ footer .small {
   opacity: 0.9;
 }
 
-footer a {
+footer a,
+footer a:visited {
   color: #ffffff;
   text-decoration: underline;
 }
 
-footer a:hover {
+footer a:hover,
+footer a:focus {
   color: #c9a227;
 }
 

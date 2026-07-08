@@ -40,7 +40,7 @@
         businesses, administrative documents, legal documents, and personal records.
       </p>
 
-      <a href="mailto:bolgsvenia.global@bolgsvenia.com?subject=Translation%20Quote%20Request&body=Hello%20Bolgsvenia%20Global,%0D%0A%0D%0AI%20would%20like%20to%20request%20a%20translation%20quote.%0D%0A%0D%0ALanguage%20direction:%20Spanish%20to%20English%20/%20English%20to%20Spanish%20/%20Not%20sure%0D%0ADocument%20type:%20%0D%0ANumber%20of%20pages:%20%0D%0ACountry%20where%20the%20translation%20will%20be%20used:%20%0D%0ADeadline:%20%0D%0AIs%20a%20certified%20translation%20statement%20required?:%20Yes%20/%20No%0D%0A%0D%0AThank%20you." class="button">Request a Quote</a>
+      <a href="#contact" class="button">Request a Quote</a>
     </div>
   </header>
 
@@ -131,7 +131,7 @@
         <div class="steps">
           <div>
             <span>1</span>
-            <p>Send a clear copy of your document by email.</p>
+            <p>Complete the website form and attach a clear copy of your document if required.</p>
           </div>
 
           <div>
@@ -286,7 +286,8 @@
       <div class="container">
         <h2>Contact</h2>
         <p>
-          To request a quote, please send your document or enquiry by email.
+          To request a quote, please complete the form below. You may attach one document
+          for quotation purposes.
         </p>
         <p>
           Please include the language direction, document type, number of pages,
@@ -294,9 +295,71 @@
           a certified translation statement.
         </p>
 
-        <p><strong>Email:</strong> <a href="mailto:bolgsvenia.global@bolgsvenia.com">bolgsvenia.global@bolgsvenia.com</a></p>
+        <form action="https://api.web3forms.com/submit" method="POST" enctype="multipart/form-data" class="contact-form">
+          <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
+          <input type="hidden" name="subject" value="New translation enquiry from Bolgsvenia Global website">
+          <input type="hidden" name="from_name" value="Bolgsvenia Global Website">
 
-        <a href="mailto:bolgsvenia.global@bolgsvenia.com?subject=Translation%20Quote%20Request&body=Hello%20Bolgsvenia%20Global,%0D%0A%0D%0AI%20would%20like%20to%20request%20a%20translation%20quote.%0D%0A%0D%0ALanguage%20direction:%20Spanish%20to%20English%20/%20English%20to%20Spanish%20/%20Not%20sure%0D%0ADocument%20type:%20%0D%0ANumber%20of%20pages:%20%0D%0ACountry%20where%20the%20translation%20will%20be%20used:%20%0D%0ADeadline:%20%0D%0AIs%20a%20certified%20translation%20statement%20required?:%20Yes%20/%20No%0D%0A%0D%0AThank%20you." class="button">Email Bolgsvenia Global</a>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="phone">Phone / WhatsApp optional</label>
+          <input type="text" id="phone" name="phone">
+
+          <label for="language-pair">Language direction</label>
+          <select id="language-pair" name="language_direction" required>
+            <option value="">Please select</option>
+            <option value="Spanish to English">Spanish to English</option>
+            <option value="English to Spanish">English to Spanish</option>
+            <option value="Not sure">Not sure</option>
+          </select>
+
+          <label for="document-type">Document type</label>
+          <input type="text" id="document-type" name="document_type" placeholder="e.g. birth certificate, legal document, business document">
+
+          <label for="pages">Number of pages</label>
+          <input type="text" id="pages" name="number_of_pages">
+
+          <label for="country">Country where the translation will be used</label>
+          <input type="text" id="country" name="country_where_translation_will_be_used">
+
+          <label for="deadline">Deadline</label>
+          <input type="text" id="deadline" name="deadline">
+
+          <label for="certified">Is a certified translation statement required?</label>
+          <select id="certified" name="certified_translation_statement_required">
+            <option value="">Please select</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="Not sure">Not sure</option>
+          </select>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+
+          <label for="attachment">Attach document optional</label>
+          <input type="file" id="attachment" name="attachment" accept=".pdf,.jpg,.jpeg,.png,.doc,.docx">
+
+          <div class="checkbox-row">
+            <input type="checkbox" id="consent" name="consent" required>
+            <label for="consent">
+              I understand that my details and any attached document will be used by Bolgsvenia Global
+              to respond to my enquiry and provide translation services where agreed.
+            </label>
+          </div>
+
+          <button type="submit">Send enquiry</button>
+        </form>
+
+        <p class="form-note">
+          Please avoid sending highly sensitive documents unless necessary. For large files, multiple documents
+          or highly confidential documents, please contact us first so we can confirm the most appropriate way
+          to receive them. You can also email us directly at
+          <a href="mailto:bolgsvenia.global@bolgsvenia.com">bolgsvenia.global@bolgsvenia.com</a>.
+        </p>
       </div>
     </section>
 
@@ -313,6 +376,7 @@
         UK certified translation statements are available where applicable.
         For Spanish sworn translations, assistance may be available through collaboration with an authorised sworn translator in Spain.
         Bolgsvenia Global is not itself a Spanish sworn translator.
+        Bolgsvenia Global provides translation services only and does not provide legal advice.
       </p>
       <p class="small">
         <a href="privacy.html">Privacy & Confidentiality</a> |

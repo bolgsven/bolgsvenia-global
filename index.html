@@ -318,19 +318,19 @@
           </select>
 
           <label for="document-type">Document type</label>
-          <input type="text" id="document-type" name="document_type" placeholder="e.g. birth certificate, legal document, business document">
-
+          <input type="text" id="document-type" name="document_type" placeholder="e.g. birth certificate, legal document, business document" required>
+          
           <label for="pages">Number of pages</label>
-          <input type="text" id="pages" name="number_of_pages">
+          <input type="text" id="pages" name="number_of_pages" required>
 
           <label for="country">Country where the translation will be used</label>
-          <input type="text" id="country" name="country_where_translation_will_be_used">
+          <input type="text" id="country" name="country_where_translation_will_be_used" required>
 
           <label for="deadline">Deadline</label>
-          <input type="text" id="deadline" name="deadline">
+          <input type="text" id="deadline" name="deadline" required>
 
           <label for="certified">Is a certified translation statement required?</label>
-          <select id="certified" name="certified_translation_statement_required">
+          <select id="certified" name="certified_translation_statement_required" required>
             <option value="">Please select</option>
             <option value="Yes">Yes</option>
             <option value="No">No</option>

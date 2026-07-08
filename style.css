@@ -157,13 +157,15 @@ body {
   color: #f7f4ee;
 }
 
-.highlight a {
-  color: #c9a227;
+.section.highlight a,
+.section.highlight a:visited {
+  color: #c9a227 !important;
   font-weight: bold;
 }
 
-.highlight a:hover {
-  color: #d9b63a;
+.section.highlight a:hover,
+.section.highlight a:focus {
+  color: #d9b63a !important;
 }
 
 /* PROFESSIONAL SUPPORT SECTION */

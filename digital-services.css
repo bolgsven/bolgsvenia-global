@@ -1,0 +1,82 @@
+/* Bolgsvenia Global 2026: website development and remote IT support.
+   Additive styles: existing translation, Web3Forms and legal page layouts remain intact. */
+.ds-services-band{padding:88px 0 92px;background:var(--parchment,#f3ede3);border-block:1px solid var(--border,#ddd4c7)}
+.ds-kicker{display:inline-block;color:var(--brass-dark,#8c682f);font-size:.69rem;font-weight:800;letter-spacing:.15em;text-transform:uppercase}
+.ds-band-heading{display:flex;align-items:end;justify-content:space-between;gap:30px;margin:12px 0 31px}
+.ds-band-heading h2{max-width:740px;color:var(--forest,#24362f);font:600 clamp(2.9rem,5vw,4.9rem)/.97 var(--heading-font,Georgia,serif);letter-spacing:-.025em}
+.ds-band-heading p{max-width:350px;color:#536158;font-size:.83rem;line-height:1.75}
+.ds-services-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.ds-service-tile{display:flex;flex-direction:column;gap:13px;background:#fff;border:1px solid #dfd5c6;border-radius:5px;min-width:0;padding:30px;box-shadow:0 12px 34px rgba(24,39,32,.04);transition:transform .2s ease,box-shadow .2s ease}
+.ds-service-tile:hover{transform:translateY(-3px);box-shadow:0 21px 45px rgba(24,39,32,.10)}
+.ds-tile-icon{display:grid;place-items:center;width:53px;height:53px;border-radius:50%;background:var(--forest,#24362f);color:#e8cf9d}
+.ds-tile-icon svg{width:25px;height:25px;fill:none;stroke:currentColor;stroke-width:1.65;stroke-linecap:round;stroke-linejoin:round}
+.ds-tile-number{font-size:.66rem;letter-spacing:.13em;color:var(--brass-dark,#8c682f);font-weight:800}
+.ds-service-tile h3{color:var(--forest,#24362f);font:600 2.05rem/1.04 var(--heading-font,Georgia,serif)}
+.ds-service-tile p{flex:1;color:#59635a;font-size:.80rem;line-height:1.75}
+.ds-tile-link{color:var(--forest,#24362f);font-size:.75rem;font-weight:800;text-decoration:underline;text-decoration-color:var(--brass,#b08a4f);text-underline-offset:5px}
+.ds-tile-link:hover{color:var(--brass-dark,#8c682f)}
+.ds-band-note{margin-top:22px;color:#657169;font-size:.73rem}
+/* Digital service pages */
+.ds-page-hero{padding:78px 0 83px;background:radial-gradient(circle at 88% 10%,rgba(176,138,79,.11),transparent 34%),var(--ivory,#fbf8f2);border-bottom:1px solid var(--border,#ddd4c7)}
+.ds-hero-grid{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(270px,.88fr);gap:70px;align-items:center}
+.ds-back-link{display:inline-block;color:#7d6135;font-size:.73rem;text-decoration:underline;text-underline-offset:4px;margin-bottom:22px}
+.ds-page-hero h1{font:600 clamp(3.2rem,6vw,6.1rem)/.94 var(--heading-font,Georgia,serif);color:var(--forest,#24362f);letter-spacing:-.04em;margin:18px 0 20px;max-width:800px}
+.ds-page-hero h1 em{font-style:normal;color:var(--brass-dark,#8c682f)}
+.ds-intro{font-size:1rem;color:#59665d;max-width:630px;line-height:1.75;margin-bottom:27px}
+.ds-hero-actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.ds-side-panel{padding:31px;background:#fff;border:1px solid var(--border,#ddd4c7);border-top:4px solid var(--brass,#b08a4f);box-shadow:0 25px 50px rgba(24,39,32,.08);border-radius:4px}
+.ds-side-panel h2{font:600 2.1rem/1.08 var(--heading-font,Georgia,serif);color:var(--forest,#24362f);margin-bottom:18px}
+.ds-side-panel ul{padding:0;list-style:none;display:grid;gap:15px}
+.ds-side-panel li{display:flex;gap:12px;font-size:.8rem;color:#526158;line-height:1.55}
+.ds-side-panel li:before{content:'\2713';font-weight:800;color:var(--brass-dark,#8c682f)}
+.ds-section{padding:85px 0}
+.ds-section--alt{background:var(--parchment,#f3ede3)}
+.ds-section h2{font:600 clamp(2.6rem,4.6vw,4.3rem)/.98 var(--heading-font,Georgia,serif);color:var(--forest,#24362f);margin:14px 0 18px}
+.ds-section-lead{max-width:800px;font-size:.91rem;color:#58645b;line-height:1.75;margin-bottom:31px}
+.ds-feature-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}
+.ds-feature{background:#fff;border:1px solid #e1d9cd;border-radius:4px;padding:30px;min-width:0}
+.ds-feature .ds-num{color:var(--brass-dark,#8c682f);font:600 1.5rem var(--heading-font,Georgia,serif)}
+.ds-feature h3{color:var(--forest,#24362f);font:600 1.8rem/1.04 var(--heading-font,Georgia,serif);margin:12px 0}
+.ds-feature p{color:#576158;font-size:.8rem;line-height:1.8}
+.ds-split{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start}
+.ds-steps{display:grid;gap:23px}
+.ds-step{padding:0 0 18px 0;border-bottom:1px solid #d7cfc3}
+.ds-step strong{display:block;color:var(--forest,#24362f);font-size:.9rem;margin-bottom:5px}
+.ds-step p{color:#57645a;font-size:.79rem}
+.ds-proof{background:#fff;border-left:3px solid var(--brass,#b08a4f);padding:27px;color:#44534b;font-size:.86rem;line-height:1.8}
+.ds-proof a{color:#705329;text-decoration:underline;text-underline-offset:4px}
+.ds-small-note{font-size:.74rem;color:#647167;margin-top:17px}
+.ds-quote-section{background:var(--forest-dark,#182720);padding:84px 0;color:#fff}
+.ds-quote-layout{display:grid;grid-template-columns:minmax(0,.83fr) minmax(0,1.17fr);gap:76px;align-items:start}
+.ds-quote-section h2{font:600 clamp(2.7rem,4.5vw,4.35rem)/1 var(--heading-font,Georgia,serif);margin:13px 0 18px;color:#fff}
+.ds-quote-section p{color:#c6d0c9;font-size:.83rem;line-height:1.8}
+.ds-quote-section .ds-contact-email{color:#e0c58f;display:inline-block;margin-top:20px;font-size:.77rem;overflow-wrap:anywhere;text-decoration:underline}
+.ds-form{background:#fff;border:1px solid var(--border,#ddd4c7);border-radius:4px;padding:32px;color:var(--forest,#24362f);position:relative}
+.ds-form h3{font:600 2.1rem/1.08 var(--heading-font,Georgia,serif);margin-bottom:8px;color:var(--forest,#24362f)}
+.ds-form .ds-form-sub{color:#67736a;font-size:.78rem;margin-bottom:20px}
+.ds-form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.ds-field{display:flex;flex-direction:column;gap:5px;margin-bottom:16px;min-width:0}
+.ds-field label{font-size:.73rem;font-weight:750;color:#2c3e33}
+.ds-field input,.ds-field select,.ds-field textarea{width:100%;background:#fff;border:1px solid #d7cfc3;border-radius:3px;color:#23372d;padding:12px 13px;min-height:46px;font:inherit;font-size:.85rem}
+.ds-field textarea{min-height:125px;resize:vertical}
+.ds-field input:focus,.ds-field select:focus,.ds-field textarea:focus{outline:2px solid var(--brass,#b08a4f);outline-offset:1px}
+.ds-consent{display:grid;grid-template-columns:20px 1fr;gap:10px;align-items:start;margin:4px 0 16px}
+.ds-consent input{margin-top:6px}
+.ds-consent label{font-size:.72rem;color:#4f5b52;line-height:1.65}
+.ds-consent a{text-decoration:underline;color:#71542a}
+.ds-sensitive-note{padding:12px 15px;background:#f3ede3;border-left:3px solid #b08a4f;color:#576158;font-size:.72rem;margin-bottom:18px}
+.ds-form-submit{width:100%;border:0;background:var(--brass,#b08a4f);color:#17271d;cursor:pointer;padding:15px 20px;font-weight:800;font-size:.76rem;text-transform:uppercase;letter-spacing:.06em}
+.ds-form-submit:hover,.ds-form-submit:focus-visible{background:#d0ae72}
+.ds-form-after{font-size:.68rem;color:#687269;margin-top:9px;text-align:center}
+.ds-botcheck{position:absolute;left:-9999px;top:0;width:1px;height:1px;overflow:hidden}
+.ds-faq{max-width:950px}
+.ds-faq details{border-bottom:1px solid #d6cec2;padding:17px 0}
+.ds-faq summary{cursor:pointer;font:600 1.6rem/1.15 var(--heading-font,Georgia,serif);color:var(--forest,#24362f)}
+.ds-faq p{font-size:.83rem;color:#5a655c;line-height:1.8;margin-top:10px}
+.ds-footer-overview{font-size:.74rem;color:#acb8b0;max-width:320px}
+.ds-header-nav{white-space:nowrap}
+.ds-language-note{color:#677268;font-size:.72rem}
+@media(max-width:1100px){.ds-band-heading{align-items:start;flex-direction:column;gap:14px}.ds-hero-grid{gap:35px}.ds-quote-layout{gap:35px}}
+@media(max-width:950px){.ds-services-grid,.ds-feature-grid{grid-template-columns:1fr 1fr}.ds-split,.ds-hero-grid,.ds-quote-layout{grid-template-columns:1fr}.ds-side-panel{max-width:670px}.ds-quote-layout{gap:27px}}
+@media(max-width:650px){.ds-services-grid,.ds-feature-grid,.ds-form-grid{grid-template-columns:1fr}.ds-services-band{padding:52px 0}.ds-band-heading h2{font-size:3rem}.ds-page-hero{padding:50px 0}.ds-section{padding:52px 0}.ds-quote-section{padding:52px 0}.ds-service-tile,.ds-feature{padding:24px}.ds-form{padding:24px 18px}.ds-page-hero h1{font-size:3.3rem}.ds-hero-actions .button{width:100%}.ds-services-grid{gap:12px}}
+@media(prefers-reduced-motion:reduce){.ds-service-tile{transition:none}}

@@ -23,6 +23,10 @@
   >
 
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="lead.css">
+  <link rel="canonical" href="https://bolgsveniaglobal.co.uk/">
+  <link rel="alternate" hreflang="en-GB" href="https://bolgsveniaglobal.co.uk/">
+  <link rel="alternate" hreflang="es-ES" href="https://bolgsveniaglobal.co.uk/es.html">
 </head>
 
 <body class="home-page">
@@ -163,6 +167,13 @@
          SERVICES
     ====================================================== -->
 
+    <!-- BG-CONVERSION-2026 -->
+    <section class="lead-promo" aria-label="Document translation">
+      <div class="container lead-promo-inner">
+        <div><span class="lead-promo-kicker">DOCUMENTS &amp; CERTIFICATES</span><h2>Need a Spanish document translated into English?</h2><p>Request a quote with a few details, and optionally attach one document.</p></div>
+        <a class="lead-promo-link" href="spanish-to-english-translation.html">Explore this service <span aria-hidden="true">&rarr;</span></a>
+      </div>
+    </section>
     <section class="services-strip" id="services">
       <div class="wide-container service-grid">
 
@@ -663,7 +674,7 @@
 
           <p>
             Complete the form with the details needed to assess your request.
-            You may attach one document for quotation purposes.
+            You may attach one document when requesting a quote, but it is optional.
           </p>
 
           <div class="privacy-callout">
@@ -686,204 +697,110 @@
         </div>
 
 
-        <form
-          action="https://api.web3forms.com/submit"
-          method="POST"
-          enctype="multipart/form-data"
-          class="contact-form"
-        >
-
-          <!--
-            IMPORTANT:
-            Copy the existing Web3Forms access-key value from your CURRENT
-            working index.html and paste it below. Do not post that key publicly
-            in chat.
-          -->
-          <input
-            type="hidden"
-            name="access_key"
-            value="PASTE_YOUR_EXISTING_WEB3FORMS_ACCESS_KEY_HERE"
-          >
-
-          <input
-            type="hidden"
-            name="subject"
-            value="New translation enquiry from Bolgsvenia Global website"
-          >
-
-          <input
-            type="hidden"
-            name="from_name"
-            value="Bolgsvenia Global Website"
-          >
-
-
-          <div class="form-grid">
-
-            <div class="form-group">
-              <label for="name">Name</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                autocomplete="name"
-                required
-              >
-            </div>
-
-            <div class="form-group">
-              <label for="email">Email address</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                autocomplete="email"
-                required
-              >
-            </div>
-
+        <form class="contact-form lead-form" data-lead-form data-pro-file-upload="2026"
+          action="https://api.web3forms.com/submit" method="POST" enctype="multipart/form-data">
+          <!-- Web3Forms public access key; configured locally, never an account password. -->
+          <input type="hidden" name="access_key" value="06b454bd-fa33-4ee4-b7d8-264075f2c497">
+          <input type="hidden" name="subject" value="New translation quote request - Bolgsvenia Global">
+          <input type="hidden" name="from_name" value="Bolgsvenia Global Website">
+          <input type="hidden" name="redirect" value="https://bolgsveniaglobal.co.uk/thank-you.html">
+          <input type="hidden" name="enquiry_source" value="homepage-en">
+          
+          <div class="lead-form-intro">
+            <h3>Tell us what you need translated</h3>
+            <p>A few details are enough to get started. Attaching a file is optional.</p>
           </div>
-
-
-          <div class="form-group">
-            <label for="phone">Phone / WhatsApp optional</label>
-            <input
-              type="text"
-              id="phone"
-              name="phone"
-              autocomplete="tel"
-            >
-          </div>
-
-
           <div class="form-grid">
-
             <div class="form-group">
-              <label for="language-pair">Language direction</label>
-              <select
-                id="language-pair"
-                name="language_direction"
-                required
-              >
+              <label for="lead-name">Your name *</label>
+              <input id="lead-name" type="text" name="name" autocomplete="name" maxlength="120" required>
+            </div>
+            <div class="form-group">
+              <label for="lead-email">Email address *</label>
+              <input id="lead-email" type="email" name="email" autocomplete="email" maxlength="180" required>
+            </div>
+          </div>
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="lead-direction">Translation direction *</label>
+              <select id="lead-direction" name="language_direction" required>
                 <option value="">Please select</option>
                 <option value="Spanish to English">Spanish to English</option>
                 <option value="English to Spanish">English to Spanish</option>
-                <option value="Not sure">Not sure</option>
               </select>
             </div>
-
             <div class="form-group">
-              <label for="document-type">Document type</label>
-              <input
-                type="text"
-                id="document-type"
-                name="document_type"
-                placeholder="e.g. birth certificate"
-                required
-              >
-            </div>
-
-          </div>
-
-
-          <div class="form-grid">
-
-            <div class="form-group">
-              <label for="pages">Number of pages</label>
-              <input
-                type="text"
-                id="pages"
-                name="number_of_pages"
-                required
-              >
-            </div>
-
-            <div class="form-group">
-              <label for="country">Country where the translation will be used</label>
-              <input
-                type="text"
-                id="country"
-                name="country_where_translation_will_be_used"
-                required
-              >
-            </div>
-
-          </div>
-
-
-          <div class="form-grid">
-
-            <div class="form-group">
-              <label for="deadline">Deadline</label>
-              <input
-                type="text"
-                id="deadline"
-                name="deadline"
-                required
-              >
-            </div>
-
-            <div class="form-group">
-              <label for="certified">Certification statement required?</label>
-              <select
-                id="certified"
-                name="certified_translation_statement_required"
-                required
-              >
-                <option value="">Please select</option>
-                <option value="Yes">Yes</option>
-                <option value="No">No</option>
-                <option value="Not sure">Not sure</option>
+              <label for="lead-document">Document type *</label>
+              <select id="lead-document" name="document_type" required>
+                <option value="">Select document type</option>
+                <option value="Birth certificate">Birth certificate</option>
+                <option value="Marriage certificate">Marriage certificate</option>
+                <option value="Academic document">Academic document</option>
+                <option value="Legal or administrative document">Legal or administrative document</option>
+                <option value="Business document">Business document</option>
+                <option value="Other">Other</option>
               </select>
             </div>
-
           </div>
-
-
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea
-              id="message"
-              name="message"
-              rows="6"
-              required
-            ></textarea>
-          </div>
-
-
-          <div class="form-group">
-            <label for="attachment">Attach document optional</label>
-            <input
-              type="file"
-              id="attachment"
-              name="attachment"
+          <details class="lead-optional">
+            <summary>Additional information (optional)</summary>
+            <div class="lead-optional-content">
+              <div class="form-grid">
+                <div class="form-group">
+                  <label for="lead-pages">Approximate page count</label>
+                  <input id="lead-pages" type="number" name="number_of_pages" min="1" max="999" inputmode="numeric">
+                </div>
+                <div class="form-group">
+                  <label for="lead-country">Country where it will be used</label>
+                  <input id="lead-country" type="text" name="country_of_use" maxlength="100"
+                    placeholder="e.g. United Kingdom">
+                </div>
+              </div>
+              <div class="form-grid">
+                <div class="form-group">
+                  <label for="lead-cert">Certification needed?</label>
+                  <select id="lead-cert" name="certification_requirements">
+                    <option value="Not sure">Not sure</option>
+                    <option value="Standard translation">Standard translation</option>
+                    <option value="UK certified statement">UK certified statement</option>
+                    <option value="Spanish sworn translation">Sworn translation for Spain</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="lead-deadline">Preferred deadline</label>
+                  <input id="lead-deadline" type="date" name="preferred_deadline">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="lead-message">Message or questions</label>
+                <textarea id="lead-message" name="message" rows="3" maxlength="1500"
+                  placeholder="Requirements, formatting or questions"></textarea>
+              </div>
+            </div>
+          </details>
+          <div class="form-group lead-attachment">
+            <label for="lead-attachment">Attach a document (optional)</label>
+            <input id="lead-attachment" type="file" name="attachment"
               accept=".pdf,.jpg,.jpeg,.png,.doc,.docx"
-            >
+              aria-describedby="lead-file-guidance">
+            <p id="lead-file-guidance" class="lead-upload-hint">
+              One PDF, JPG, PNG, DOC or DOCX file up to 5 MB. Files are processed through Web3Forms to deliver your enquiry.
+            </p>
           </div>
-
-
-          <div class="checkbox-row">
-            <input
-              type="checkbox"
-              id="consent"
-              name="consent"
-              value="Client consented to the privacy and document handling notice."
-              required
-            >
-
-            <label for="consent">
-              I understand that my details and any attached document will be used
-              by Bolgsvenia Global to respond to my enquiry and provide translation
-              services where agreed. I have read the
-              <a href="privacy.html">Privacy &amp; Confidentiality Notice</a>.
-            </label>
+          <p class="lead-privacy-tip">A file is not required. Please do not attach passports, identity numbers, medical records or other highly sensitive material unless necessary; contact us first to agree a suitable transfer method.</p>
+          <div class="checkbox-row lead-checkbox">
+            <input id="lead-privacy" type="checkbox" name="privacy_acknowledgement" value="Acknowledged" required>
+            <label for="lead-privacy">I have read the
+              <a href="privacy.html">Privacy &amp; Confidentiality Notice</a>
+              and understand how my enquiry and any attachment will be processed.</label>
           </div>
-
-
-          <button type="submit" class="button button-accent">
-            Send enquiry
-          </button>
-
+          <div class="lead-honeypot" aria-hidden="true">
+            <label>Leave empty<input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off"></label>
+          </div>
+          <button type="submit" class="button button-accent lead-submit">Request a quotation <span aria-hidden="true">&rarr;</span></button>
+          <p class="lead-form-note">No obligation. We confirm the price before work begins.</p>
+          <p class="lead-form-status" data-form-status role="alert" tabindex="-1" hidden></p>
+          <noscript><p class="lead-form-note">If this form does not work, email bolgsvenia.global@bolgsvenia.com.</p></noscript>
         </form>
 
       </div>
@@ -913,6 +830,7 @@
         <h2>Services</h2>
         <a href="#services">Translation Services</a>
         <a href="#documents">Documents</a>
+        <a href="spanish-to-english-translation.html">Spanish to English</a>
         <a href="#professional-support">Professional Support</a>
         <a href="#pricing">Pricing</a>
       </div>
@@ -952,5 +870,6 @@
     </div>
   </footer>
 
+  <script src="lead.js" defer></script>
 </body>
 </html>

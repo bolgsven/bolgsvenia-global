@@ -23,6 +23,10 @@
   >
 
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="lead.css">
+  <link rel="canonical" href="https://bolgsveniaglobal.co.uk/es.html">
+  <link rel="alternate" hreflang="en-GB" href="https://bolgsveniaglobal.co.uk/">
+  <link rel="alternate" hreflang="es-ES" href="https://bolgsveniaglobal.co.uk/es.html">
 </head>
 
 <body class="home-page">
@@ -168,6 +172,13 @@
          SERVICIOS
     ====================================================== -->
 
+    <!-- BG-CONVERSION-2026 -->
+    <section class="lead-promo" aria-label="Traducci&oacute;n documental">
+      <div class="container lead-promo-inner">
+        <div><span class="lead-promo-kicker">DOCUMENTOS Y CERTIFICADOS</span><h2>&iquest;Necesita traducir un documento del espa&ntilde;ol al ingl&eacute;s?</h2><p>Solicite presupuesto con unos datos b&aacute;sicos. Si lo desea, puede adjuntar un documento.</p></div>
+        <a class="lead-promo-link" href="traduccion-espanol-ingles.html">Ver el servicio <span aria-hidden="true">&rarr;</span></a>
+      </div>
+    </section>
     <section class="services-strip" id="services">
       <div class="wide-container service-grid">
 
@@ -716,8 +727,7 @@
 
           <p>
             Complete el formulario con la información necesaria
-            para evaluar su solicitud. Puede adjuntar un documento
-            para fines de presupuesto.
+            para evaluar su solicitud. Puede adjuntar un archivo para solicitar presupuesto, pero no es obligatorio.
           </p>
 
           <div class="privacy-callout">
@@ -740,220 +750,110 @@
         </div>
 
 
-        <form
-          action="https://api.web3forms.com/submit"
-          method="POST"
-          enctype="multipart/form-data"
-          class="contact-form"
-        >
-
-          <!--
-            IMPORTANTE:
-            Copie en este campo la misma clave Web3Forms que utiliza
-            actualmente su formulario inglés operativo.
-          -->
-          <input
-            type="hidden"
-            name="access_key"
-            value="PASTE_YOUR_EXISTING_WEB3FORMS_ACCESS_KEY_HERE"
-          >
-
-          <input
-            type="hidden"
-            name="subject"
-            value="Nueva consulta de traducción desde la web de Bolgsvenia Global"
-          >
-
-          <input
-            type="hidden"
-            name="from_name"
-            value="Sitio web de Bolgsvenia Global"
-          >
-
-
-          <div class="form-grid">
-
-            <div class="form-group">
-              <label for="name">Nombre</label>
-
-              <input
-                type="text"
-                id="name"
-                name="name"
-                autocomplete="name"
-                required
-              >
-            </div>
-
-
-            <div class="form-group">
-              <label for="email">Correo electrónico</label>
-
-              <input
-                type="email"
-                id="email"
-                name="email"
-                autocomplete="email"
-                required
-              >
-            </div>
-
+        <form class="contact-form lead-form" data-lead-form data-pro-file-upload="2026"
+          action="https://api.web3forms.com/submit" method="POST" enctype="multipart/form-data">
+          <!-- Web3Forms public access key; configured locally, never an account password. -->
+          <input type="hidden" name="access_key" value="06b454bd-fa33-4ee4-b7d8-264075f2c497">
+          <input type="hidden" name="subject" value="Nueva solicitud de presupuesto - Bolgsvenia Global">
+          <input type="hidden" name="from_name" value="Bolgsvenia Global Website">
+          <input type="hidden" name="redirect" value="https://bolgsveniaglobal.co.uk/gracias.html">
+          <input type="hidden" name="enquiry_source" value="homepage-es">
+          
+          <div class="lead-form-intro">
+            <h3>D&iacute;ganos qu&eacute; necesita traducir</h3>
+            <p>Solo necesitamos unos datos para empezar. No es obligatorio adjuntar un archivo.</p>
           </div>
-
-
-          <div class="form-group">
-            <label for="phone">Teléfono / WhatsApp opcional</label>
-
-            <input
-              type="text"
-              id="phone"
-              name="phone"
-              autocomplete="tel"
-            >
-          </div>
-
-
           <div class="form-grid">
-
             <div class="form-group">
-              <label for="language-pair">Dirección de la traducción</label>
-
-              <select
-                id="language-pair"
-                name="language_direction"
-                required
-              >
-                <option value="">Seleccione una opción</option>
-                <option value="Spanish to English">Español a inglés</option>
-                <option value="English to Spanish">Inglés a español</option>
-                <option value="Not sure">No estoy seguro/a</option>
+              <label for="lead-name">Nombre *</label>
+              <input id="lead-name" type="text" name="name" autocomplete="name" maxlength="120" required>
+            </div>
+            <div class="form-group">
+              <label for="lead-email">Correo electr&oacute;nico *</label>
+              <input id="lead-email" type="email" name="email" autocomplete="email" maxlength="180" required>
+            </div>
+          </div>
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="lead-direction">Direcci&oacute;n de la traducci&oacute;n *</label>
+              <select id="lead-direction" name="language_direction" required>
+                <option value="">Seleccione una opci&oacute;n</option>
+                <option value="Spanish to English">Espa&ntilde;ol a ingl&eacute;s</option>
+                <option value="English to Spanish">Ingl&eacute;s a espa&ntilde;ol</option>
               </select>
             </div>
-
-
             <div class="form-group">
-              <label for="document-type">Tipo de documento</label>
-
-              <input
-                type="text"
-                id="document-type"
-                name="document_type"
-                placeholder="p. ej., certificado de nacimiento"
-                required
-              >
-            </div>
-
-          </div>
-
-
-          <div class="form-grid">
-
-            <div class="form-group">
-              <label for="pages">Número de páginas</label>
-
-              <input
-                type="text"
-                id="pages"
-                name="number_of_pages"
-                required
-              >
-            </div>
-
-
-            <div class="form-group">
-              <label for="country">País donde se utilizará la traducción</label>
-
-              <input
-                type="text"
-                id="country"
-                name="country_where_translation_will_be_used"
-                required
-              >
-            </div>
-
-          </div>
-
-
-          <div class="form-grid">
-
-            <div class="form-group">
-              <label for="deadline">Fecha límite</label>
-
-              <input
-                type="text"
-                id="deadline"
-                name="deadline"
-                required
-              >
-            </div>
-
-
-            <div class="form-group">
-              <label for="certified">
-                ¿Necesita una declaración de certificación?
-              </label>
-
-              <select
-                id="certified"
-                name="certified_translation_statement_required"
-                required
-              >
-                <option value="">Seleccione una opción</option>
-                <option value="Yes">Sí</option>
-                <option value="No">No</option>
-                <option value="Not sure">No estoy seguro/a</option>
+              <label for="lead-document">Tipo de documento *</label>
+              <select id="lead-document" name="document_type" required>
+                <option value="">Seleccione el tipo de documento</option>
+                <option value="Birth certificate">Certificado de nacimiento</option>
+                <option value="Marriage certificate">Certificado de matrimonio</option>
+                <option value="Academic document">Documento acad&eacute;mico</option>
+                <option value="Legal or administrative document">Documento jur&iacute;dico o administrativo</option>
+                <option value="Business document">Documento empresarial</option>
+                <option value="Other">Otro</option>
               </select>
             </div>
-
           </div>
-
-
-          <div class="form-group">
-            <label for="message">Mensaje</label>
-
-            <textarea
-              id="message"
-              name="message"
-              rows="6"
-              required
-            ></textarea>
-          </div>
-
-
-          <div class="form-group">
-            <label for="attachment">Adjuntar documento opcional</label>
-
-            <input
-              type="file"
-              id="attachment"
-              name="attachment"
+          <details class="lead-optional">
+            <summary>Datos adicionales (opcional)</summary>
+            <div class="lead-optional-content">
+              <div class="form-grid">
+                <div class="form-group">
+                  <label for="lead-pages">N&uacute;mero aproximado de p&aacute;ginas</label>
+                  <input id="lead-pages" type="number" name="number_of_pages" min="1" max="999" inputmode="numeric">
+                </div>
+                <div class="form-group">
+                  <label for="lead-country">Pa&iacute;s en el que se utilizar&aacute;</label>
+                  <input id="lead-country" type="text" name="country_of_use" maxlength="100"
+                    placeholder="p. ej., Reino Unido">
+                </div>
+              </div>
+              <div class="form-grid">
+                <div class="form-group">
+                  <label for="lead-cert">&iquest;Necesita certificaci&oacute;n?</label>
+                  <select id="lead-cert" name="certification_requirements">
+                    <option value="Not sure">No lo s&eacute;</option>
+                    <option value="Standard translation">Traducci&oacute;n sin certificaci&oacute;n</option>
+                    <option value="UK certified statement">Declaraci&oacute;n de certificaci&oacute;n para Reino Unido</option>
+                    <option value="Spanish sworn translation">Traducci&oacute;n jurada para Espa&ntilde;a</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="lead-deadline">Fecha l&iacute;mite deseada</label>
+                  <input id="lead-deadline" type="date" name="preferred_deadline">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="lead-message">Mensaje o consultas</label>
+                <textarea id="lead-message" name="message" rows="3" maxlength="1500"
+                  placeholder="Requisitos, formato o consultas"></textarea>
+              </div>
+            </div>
+          </details>
+          <div class="form-group lead-attachment">
+            <label for="lead-attachment">Adjuntar un documento (opcional)</label>
+            <input id="lead-attachment" type="file" name="attachment"
               accept=".pdf,.jpg,.jpeg,.png,.doc,.docx"
-            >
+              aria-describedby="lead-file-guidance">
+            <p id="lead-file-guidance" class="lead-upload-hint">
+              Un archivo PDF, JPG, PNG, DOC o DOCX de hasta 5 MB. Web3Forms procesa los archivos para gestionar su consulta.
+            </p>
           </div>
-
-
-          <div class="checkbox-row">
-            <input
-              type="checkbox"
-              id="consent"
-              name="consent"
-              value="El cliente acepta el aviso de privacidad y tratamiento de documentos."
-              required
-            >
-
-            <label for="consent">
-              Entiendo que mis datos y cualquier documento adjunto serán utilizados
-              por Bolgsvenia Global para responder a mi consulta y prestar servicios
-              de traducción cuando se acuerde. He leído el
-              <a href="privacy-es.html">Aviso de Privacidad y Confidencialidad</a>.
-            </label>
+          <p class="lead-privacy-tip">No es obligatorio adjuntar archivos. No env&iacute;e pasaportes, documentos de identidad, informes m&eacute;dicos ni otros datos especialmente sensibles salvo que sea necesario; contacte antes para acordar un medio adecuado.</p>
+          <div class="checkbox-row lead-checkbox">
+            <input id="lead-privacy" type="checkbox" name="privacy_acknowledgement" value="Acknowledged" required>
+            <label for="lead-privacy">He le&iacute;do el
+              <a href="privacidad.html">Aviso de privacidad y confidencialidad</a>
+              y entiendo c&oacute;mo se tratar&aacute; mi consulta y cualquier documento adjunto.</label>
           </div>
-
-
-          <button type="submit" class="button button-accent">
-            Enviar consulta
-          </button>
-
+          <div class="lead-honeypot" aria-hidden="true">
+            <label>Dejar vac&iacute;o<input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off"></label>
+          </div>
+          <button type="submit" class="button button-accent lead-submit">Solicitar presupuesto <span aria-hidden="true">&rarr;</span></button>
+          <p class="lead-form-note">Sin compromiso. Confirmamos el precio antes de empezar.</p>
+          <p class="lead-form-status" data-form-status role="alert" tabindex="-1" hidden></p>
+          <noscript><p class="lead-form-note">Si el formulario no funciona, escriba a bolgsvenia.global@bolgsvenia.com.</p></noscript>
         </form>
 
       </div>
@@ -984,6 +884,7 @@
 
         <a href="#services">Servicios de traducción</a>
         <a href="#documents">Documentos</a>
+        <a href="traduccion-espanol-ingles.html">Espa&ntilde;ol a ingl&eacute;s</a>
         <a href="#professional-support">Apoyo profesional</a>
         <a href="#pricing">Precios</a>
       </div>
@@ -1024,5 +925,6 @@
     </div>
   </footer>
 
+  <script src="lead.js" defer></script>
 </body>
 </html>

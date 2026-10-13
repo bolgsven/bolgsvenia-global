@@ -80,3 +80,13 @@
 @media(max-width:950px){.ds-services-grid,.ds-feature-grid{grid-template-columns:1fr 1fr}.ds-split,.ds-hero-grid,.ds-quote-layout{grid-template-columns:1fr}.ds-side-panel{max-width:670px}.ds-quote-layout{gap:27px}}
 @media(max-width:650px){.ds-services-grid,.ds-feature-grid,.ds-form-grid{grid-template-columns:1fr}.ds-services-band{padding:52px 0}.ds-band-heading h2{font-size:3rem}.ds-page-hero{padding:50px 0}.ds-section{padding:52px 0}.ds-quote-section{padding:52px 0}.ds-service-tile,.ds-feature{padding:24px}.ds-form{padding:24px 18px}.ds-page-hero h1{font-size:3.3rem}.ds-hero-actions .button{width:100%}.ds-services-grid{gap:12px}}
 @media(prefers-reduced-motion:reduce){.ds-service-tile{transition:none}}
+/* Improve readability of form notices */
+.ds-quote-section .ds-form .ds-sensitive-note {
+  color: #33443a;
+  font-size: 0.82rem;
+}
+
+.ds-quote-section .ds-form .ds-form-after {
+  color: #48564c;
+  font-size: 0.80rem;
+}

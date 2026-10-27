@@ -21,6 +21,17 @@
   const status = el('[data-bg-status]');
   const restart = el('[data-bg-restart]');
   const sendButton = inputForm.querySelector('button[type="submit"]');
+  // On iOS, automatically focusing a small-font input opens the keyboard and
+  // can zoom/pan the entire fixed chat widget. Focus only on wider screens.
+  const focusComposerIfDesktop = () => {
+    if (!window.matchMedia('(max-width: 580px)').matches) {
+      input.focus({preventScroll: true});
+    }
+  };
+  const chatSubtitle = panel.querySelector('.bg-chat-head small');
+  if (lang === 'en' && chatSubtitle) {
+    chatSubtitle.textContent = 'English, Spanish & Catalan · General enquiries · Personal quotations';
+  }
   let aiBusy = false;
   let pendingAIController = null;
   let aiRequestId = 0;
@@ -112,6 +123,43 @@
     [data-bg-assistant] .bg-ai-privacy-compact[hidden],
     [data-bg-assistant] .bg-chat-suggestions-button[hidden]{display:none!important}
     @media(max-width:580px){.bg-chat-viewport>.bg-chat-quick{padding:0 12px 13px}.bg-ai-privacy-compact{padding:5px 10px}}
+    /* 2026-10-27 iPhone stability: prevent Safari 13px-input zoom and panel overflow. */
+    @media (max-width:580px) {
+      [data-bg-assistant] {
+        left: 10px;
+        right: 10px;
+        max-width: none;
+        min-width: 0;
+      }
+      [data-bg-assistant] .bg-chat-panel {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        min-height: 0;
+        height: min(74dvh, 660px);
+        max-height: calc(100dvh - 80px);
+        overflow: hidden;
+      }
+      [data-bg-assistant] .bg-chat-head,
+      [data-bg-assistant] .bg-chat-viewport,
+      [data-bg-assistant] .bg-chat-input-form {
+        width: 100%;
+        min-width: 0;
+      }
+      [data-bg-assistant] .bg-chat-head > div:first-child {flex:1 1 auto;min-width:0}
+      [data-bg-assistant] .bg-chat-head-actions {flex:0 0 auto}
+      [data-bg-assistant] .bg-chat-head strong,
+      [data-bg-assistant] .bg-chat-head small {overflow-wrap:anywhere}
+      [data-bg-assistant] .bg-chat-viewport {overflow-x:hidden}
+      [data-bg-assistant] .bg-chat-row {min-width:0}
+      [data-bg-assistant] .bg-chat-bubble {max-width:100%;overflow-wrap:anywhere}
+      [data-bg-assistant] .bg-chat-input-form input {
+        min-width:0;
+        font-size:16px;
+        line-height:1.3;
+      }
+      [data-bg-assistant] .bg-chat-send {flex:0 0 43px}
+    }
   `;
   document.head.append(aiChoiceCSS);
 
@@ -690,7 +738,7 @@
         input.disabled = false;
         sendButton.disabled = false;
         aiBusy = false;
-        if (!panel.hidden) input.focus();
+        if (!panel.hidden) focusComposerIfDesktop();
       }
     }
   }
@@ -699,12 +747,12 @@
     launcher.setAttribute('aria-expanded',String(open));
     if (open) {
       if(!openedOnce){welcome();openedOnce=true;}
-      input.focus();
+      focusComposerIfDesktop();
     } else launcher.focus();
   }
   launcher.addEventListener('click',()=>setOpen(panel.hidden));
   close.addEventListener('click',()=>setOpen(false));
-  restart.addEventListener('click',()=>{welcome();status.textContent=t.resetStatus;input.focus();});
+  restart.addEventListener('click',()=>{welcome();status.textContent=t.resetStatus;focusComposerIfDesktop();});
   inputForm.addEventListener('submit',(e)=>{e.preventDefault();handleInput(input.value);});
   document.addEventListener('keydown',(e)=>{if(e.key==='Escape'&&!panel.hidden){e.preventDefault();setOpen(false);}});
   document.querySelectorAll('[data-open-translation-assistant]').forEach(button=>button.addEventListener('click',()=>setOpen(true)));

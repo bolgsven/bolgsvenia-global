@@ -1,0 +1,85 @@
+/* Multi-language enquiry controls: inherit the approved Harbour design. */
+.quote-form .bg-language-fields {
+  margin:0
+}
+.quote-form .bg-language-fields select {
+  width:100%;
+  min-width:0
+}
+.quote-form .bg-language-help {
+  font-size:12px;
+  line-height:1.6;
+  color:#506e72;
+  margin:5px 0 22px
+}
+.quote-form .bg-quote-scope {
+  font-size:12px;
+  line-height:1.65;
+  color:#456669;
+  background:#f0f5f1;
+  border-left:3px solid #4b817d;
+  border-radius:0 8px 8px 0;
+  padding:12px 14px;
+  margin:6px 0 12px
+}
+.tp-routes a.tp-all-directions {
+  border-color:#8aa9a1;
+  background:#f1f6f3;
+  color:#234956
+}
+.tp-pair-note {
+  font-size:12px;
+  color:#60767a;
+  line-height:1.6;
+  margin:0
+}
+.tp-all-pairs .tp-card {
+  display:block;
+  text-decoration:none;
+  color:inherit;
+  transition:transform .15s ease,border-color .15s ease
+}
+.tp-all-pairs .tp-card:hover {
+  border-color:#5c908a;
+  transform:translateY(-2px)
+}
+.tp-pair-links {
+  margin-top:28px;
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  align-items:center
+}
+.tp-pair-links a {
+  font-size:13px;
+  font-weight:700;
+  color:#24545a;
+  text-decoration:underline;
+  text-underline-offset:3px
+}
+.tp-hub .tp-art-paper strong {
+  font-size:clamp(27px,3.65vw,60px);
+  letter-spacing:-.055em;
+  white-space:nowrap
+}
+.tp-hub .tp-art-tag {
+  max-width:85%;
+  text-align:center
+}
+@media(max-width:620px) {
+  .quote-form .bg-language-fields {
+    grid-template-columns:1fr
+  }
+  .tp-pair-links {
+    align-items:flex-start;
+    flex-direction:column
+  }
+}
+@media(prefers-reduced-motion:reduce) {
+  .tp-all-pairs .tp-card {
+    transition:none
+  }
+  .tp-all-pairs .tp-card:hover {
+    transform:none
+  }
+}

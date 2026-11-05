@@ -1,0 +1,15 @@
+name: Site integrity
+on:
+  pull_request:
+  push:
+    branches: [main]
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify site files and CSS/JS references
+        run: python3 tools/verify_site.py
+      - name: Check JavaScript syntax
+        run: |
+          find assets/js media -name '*.js' -type f -print0 | xargs -0 -r -n1 node --check

@@ -1,0 +1,328 @@
+/* Bolgsvenia Global | Harbour chat widget */
+
+[data-bg-assistant] {
+  --bg-paper:#f7f5ef;
+  --bg-ink:#223b46;
+  --bg-muted:#52656a;
+  --bg-teal:#3f716e;
+  --bg-pale:#e7eee9;
+  --bg-line:#d1d8d2;
+  --bg-white:#fffefa;
+  position:fixed;
+  right:clamp(13px,2.4vw,32px);
+  bottom:clamp(12px,2vw,28px);
+  z-index:1000;
+  font-family:inherit;
+  color:var(--bg-ink)
+}
+[data-bg-assistant] * {
+  box-sizing:border-box
+}
+[data-bg-assistant] button,[data-bg-assistant] input {
+  font:inherit
+}
+[data-bg-assistant] button {
+  cursor:pointer
+}
+[data-bg-assistant] :where(button,input):focus-visible {
+  outline:3px solid #237d87;
+  outline-offset:3px
+}
+.bg-chat-launcher {
+  border:1px solid #274c56;
+  background:var(--bg-ink);
+  box-shadow:0 12px 28px #1b344027;
+  color:white;
+  border-radius:99px;
+  display:flex;
+  align-items:center;
+  gap:11px;
+  padding:13px 20px;
+  font-size:13px;
+  letter-spacing:.035em;
+  font-weight:700;
+  transition:transform .2s ease
+}
+.bg-chat-launcher:hover {
+  transform:translateY(-3px)
+}
+.bg-chat-launcher svg {
+  width:22px;
+  height:22px;
+  fill:none;
+  stroke:currentColor;
+  stroke-width:1.7
+}
+.bg-chat-panel {
+  width:min(420px,calc(100vw - 24px));
+  height:min(630px,calc(100dvh - 105px));
+  min-height:300px;
+  background:var(--bg-white);
+  border:1px solid var(--bg-line);
+  border-radius:19px;
+  overflow:hidden;
+  box-shadow:0 25px 75px #102a3563;
+  display:flex;
+  flex-direction:column;
+  margin-bottom:13px
+}
+.bg-chat-panel[hidden] {
+  display:none
+}
+.bg-chat-head {
+  background:var(--bg-ink);
+  padding:18px 17px 15px;
+  color:white;
+  display:flex;
+  justify-content:space-between;
+  gap:12px;
+  align-items:start
+}
+.bg-chat-overline {
+  text-transform:uppercase;
+  font-size:10px;
+  letter-spacing:.18em;
+  color:#a8cbc5;
+  font-weight:750;
+  margin:0 0 6px
+}
+.bg-chat-head strong {
+  display:block;
+  font-size:18px;
+  line-height:1.2
+}
+.bg-chat-head small {
+  display:block;
+  margin-top:7px;
+  font-size:11px;
+  color:#d0dcd8
+}
+.bg-chat-head-actions {
+  display:flex;
+  gap:5px
+}
+.bg-chat-icon {
+  width:32px;
+  height:32px;
+  display:grid;
+  place-items:center;
+  background:transparent;
+  border:1px solid #647b82;
+  border-radius:9px;
+  color:white;
+  font-size:20px
+}
+.bg-chat-icon:hover {
+  background:#36535e
+}
+.bg-chat-transcript {
+  background:var(--bg-paper);
+  padding:17px 16px 12px;
+  flex:1;
+  min-height:100px;
+  overflow-y:auto;
+  overscroll-behavior:contain
+}
+.bg-chat-row {
+  max-width:93%;
+  margin-bottom:17px;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start
+}
+.bg-chat-row--user {
+  margin-left:auto;
+  align-items:flex-end
+}
+.bg-chat-speaker {
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  color:var(--bg-muted);
+  font-size:9px;
+  font-weight:800;
+  margin:0 0 6px
+}
+.bg-chat-bubble {
+  white-space:pre-line;
+  font-size:13px;
+  line-height:1.57;
+  padding:13px 15px;
+  border:1px solid #dbe2dc;
+  background:white;
+  border-radius:12px 12px 12px 3px;
+  margin:0;
+  overflow-wrap:anywhere
+}
+.bg-chat-row--user .bg-chat-bubble {
+  background:#dae7e0;
+  border-color:#aec9bf;
+  border-radius:12px 12px 3px 12px
+}
+.bg-chat-quick {
+  display:flex;
+  gap:6px;
+  flex-wrap:wrap;
+  padding:13px 14px;
+  border-top:1px solid #e3e9e3;
+  background:var(--bg-white);
+  max-height:160px;
+  overflow-y:auto
+}
+.bg-chat-option {
+  border:1px solid #adbeb9;
+  background:#f2f7f3;
+  color:var(--bg-ink);
+  border-radius:99px;
+  padding:9px 11px;
+  font-size:12px;
+  line-height:1.2;
+  font-weight:650;
+  max-width:100%
+}
+.bg-chat-option:hover {
+  border-color:var(--bg-teal);
+  background:#dcebe4
+}
+.bg-chat-input-form {
+  display:flex;
+  align-items:center;
+  gap:8px;
+  padding:12px 13px 14px;
+  border-top:1px solid var(--bg-line);
+  background:white
+}
+.bg-chat-input-form input {
+  min-width:0;
+  flex:1;
+  padding:12px;
+  border:1px solid #b3c2bc;
+  border-radius:9px;
+  background:white;
+  font-size:13px;
+  color:var(--bg-ink)
+}
+.bg-chat-send {
+  border:0;
+  background:var(--bg-teal);
+  color:white;
+  border-radius:10px;
+  width:43px;
+  height:43px;
+  font-size:19px;
+  font-weight:700
+}
+.bg-chat-input-form input::placeholder {
+  color:#53666b
+}
+.bg-chat-status {
+  position:absolute;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+  clip:rect(0,0,0,0);
+  white-space:nowrap
+}
+@media (max-width:580px) {
+  [data-bg-assistant] {
+    bottom:12px;
+    right:12px;
+    left:12px;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-end
+  }
+  .bg-chat-launcher {
+    padding:12px 16px
+  }
+  .bg-chat-panel {
+    height:min(74dvh,660px);
+    width:100%;
+    margin-bottom:9px
+  }
+  .bg-chat-transcript {
+    padding:13px
+  }
+  .bg-chat-quick {
+    max-height:130px
+  }
+}
+@media (prefers-reduced-motion:reduce) {
+  .bg-chat-launcher {
+    transition:none
+  }
+  .bg-chat-launcher:hover {
+    transform:none
+  }
+}
+/* Harbour integration: translation help and preview-status, scoped to avoid changing the approved hero */
+.bg-help-inline {
+  margin-top:27px;
+  border:1px solid #c9d7d2;
+  background:#eef4ef;
+  border-radius:16px;
+  padding:21px 22px;
+  box-shadow:0 7px 22px rgba(27,55,56,.045)
+}
+.bg-help-inline strong {
+  display:block;
+  color:#233b45;
+  font-weight:800;
+  font-size:17px;
+  line-height:1.35
+}
+.bg-help-inline p {
+  margin:9px 0 14px;
+  color:#4e6265;
+  line-height:1.6;
+  font-size:13px
+}
+.bg-help-inline button,.bg-open-btn {
+  border:1px solid #254556;
+  border-radius:99px;
+  background:#254556;
+  color:white;
+  padding:11px 18px;
+  display:inline-flex;
+  gap:10px;
+  align-items:center;
+  font-size:13px;
+  font-weight:800;
+  line-height:1.3;
+  cursor:pointer
+}
+.bg-help-inline button:hover,.bg-open-btn:hover {
+  background:#376d6c;
+  border-color:#376d6c
+}
+.bg-help-inline .bg-help-note {
+  font-size:11px;
+  color:#647975;
+  margin:11px 0 0;
+  max-width:500px
+}
+.bg-help-inline :where(button):focus-visible,.bg-open-btn:focus-visible {
+  outline:3px solid #376d6c;
+  outline-offset:4px
+}
+/* The existing preview watermark must not overlap the assistant controls */
+.preview-watermark {
+  right:auto!important;
+  left:10px!important;
+  max-width:160px!important;
+  bottom:10px!important;
+  font-size:9px!important;
+  line-height:1.45!important;
+  text-align:left!important;
+  pointer-events:none!important
+}
+@media (max-width:580px) {
+  .preview-watermark {
+    max-width:118px!important;
+    padding:6px 7px!important;
+    left:6px!important;
+    right:auto!important
+  }
+  .bg-help-inline {
+    margin-top:19px
+  }
+}
